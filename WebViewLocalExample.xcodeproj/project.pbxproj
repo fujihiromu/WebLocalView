@@ -15,6 +15,10 @@
 		5E245A141FA8086F009554F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E245A121FA8086F009554F2 /* LaunchScreen.storyboard */; };
 		5E245A1F1FA8086F009554F2 /* WebViewLocalExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E245A1E1FA8086F009554F2 /* WebViewLocalExampleTests.swift */; };
 		5E245A2A1FA8086F009554F2 /* WebViewLocalExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E245A291FA8086F009554F2 /* WebViewLocalExampleUITests.swift */; };
+		5E245A491FA80956009554F2 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E245A431FA80956009554F2 /* index.html */; };
+		5E245A4A1FA80956009554F2 /* bootstrap.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 5E245A451FA80956009554F2 /* bootstrap.min.js */; };
+		5E245A4B1FA80956009554F2 /* bootstrap.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 5E245A471FA80956009554F2 /* bootstrap.min.css */; };
+		5E245A4C1FA80956009554F2 /* jumbotron.css in Resources */ = {isa = PBXBuildFile; fileRef = 5E245A481FA80956009554F2 /* jumbotron.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		5E245A251FA8086F009554F2 /* WebViewLocalExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewLocalExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E245A291FA8086F009554F2 /* WebViewLocalExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewLocalExampleUITests.swift; sourceTree = "<group>"; };
 		5E245A2B1FA8086F009554F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E245A431FA80956009554F2 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		5E245A451FA80956009554F2 /* bootstrap.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bootstrap.min.js; sourceTree = "<group>"; };
+		5E245A471FA80956009554F2 /* bootstrap.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bootstrap.min.css; sourceTree = "<group>"; };
+		5E245A481FA80956009554F2 /* jumbotron.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jumbotron.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		5E245A051FA8086F009554F2 /* WebViewLocalExample */ = {
 			isa = PBXGroup;
 			children = (
+				5E245A421FA80956009554F2 /* Resources */,
 				5E245A061FA8086F009554F2 /* AppDelegate.swift */,
 				5E245A081FA8086F009554F2 /* ViewController.swift */,
 				5E245A0A1FA8086F009554F2 /* Main.storyboard */,
@@ -126,6 +135,33 @@
 				5E245A2B1FA8086F009554F2 /* Info.plist */,
 			);
 			path = WebViewLocalExampleUITests;
+			sourceTree = "<group>";
+		};
+		5E245A421FA80956009554F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E245A431FA80956009554F2 /* index.html */,
+				5E245A441FA80956009554F2 /* javascripts */,
+				5E245A461FA80956009554F2 /* stylesheets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E245A441FA80956009554F2 /* javascripts */ = {
+			isa = PBXGroup;
+			children = (
+				5E245A451FA80956009554F2 /* bootstrap.min.js */,
+			);
+			path = javascripts;
+			sourceTree = "<group>";
+		};
+		5E245A461FA80956009554F2 /* stylesheets */ = {
+			isa = PBXGroup;
+			children = (
+				5E245A471FA80956009554F2 /* bootstrap.min.css */,
+				5E245A481FA80956009554F2 /* jumbotron.css */,
+			);
+			path = stylesheets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E245A141FA8086F009554F2 /* LaunchScreen.storyboard in Resources */,
+				5E245A491FA80956009554F2 /* index.html in Resources */,
+				5E245A4C1FA80956009554F2 /* jumbotron.css in Resources */,
+				5E245A4A1FA80956009554F2 /* bootstrap.min.js in Resources */,
 				5E245A111FA8086F009554F2 /* Assets.xcassets in Resources */,
+				5E245A4B1FA80956009554F2 /* bootstrap.min.css in Resources */,
 				5E245A0C1FA8086F009554F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +474,7 @@
 				DEVELOPMENT_TEAM = Y4DYDEDFTT;
 				INFOPLIST_FILE = WebViewLocalExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fuji.WebViewLocalExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "fuji.BLE-DEMO.japan";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +489,7 @@
 				DEVELOPMENT_TEAM = Y4DYDEDFTT;
 				INFOPLIST_FILE = WebViewLocalExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fuji.WebViewLocalExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "fuji.BLE-DEMO.japan";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

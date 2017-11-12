@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "5a7c6daba92600d7911c786b26d66278"
+build_time: [1510310598, 820867000]
+inputs:
+  "/Users/fuji1153/Desktop/ios application/WebViewLocalExample/WebViewLocalExample/ViewController.swift": [1509414347, 0]
+  "/Users/fuji1153/Desktop/ios application/WebViewLocalExample/WebViewLocalExample/AppDelegate.swift": [1509413103, 0]
